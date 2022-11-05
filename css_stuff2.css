@@ -1,0 +1,130 @@
+﻿.container5 {
+	position: relative;
+	width:1860px;
+	height:3600px;
+	background-color:#A8A8A8;
+	padding:30px 30px 30px 30px;
+}
+
+.container6 {
+	position: relative;
+	width:1780px;
+	height:1000px;
+	background-color:white;
+	border-radius:25px;
+	padding:20px 20px 20px 20px;
+	margin: 20px 20px 20px 20px;
+	box-shadow: 10px 10px #383838;
+}
+
+#galleryimage1 {
+	display:block;
+	width:1780px;
+	height:1000px;
+	margin:0;
+	padding:0;
+	position:absolute;
+}
+
+.container7 {
+	position: relative;
+	width:1780px;
+	height:900px;
+	background-color:white;
+	border-radius:25px;
+	padding:20px 20px 20px 20px;
+	margin: 20px 20px 20px 20px;
+	box-shadow: 10px 10px #383838;
+}
+
+.container8 {
+	position: relative;
+	width:1780px;
+	height:900px;
+	background-color:white;
+	border-radius:25px;
+	padding:20px 20px 20px 20px;
+	margin: 20px 20px 20px 20px;
+	box-shadow: 10px 10px #383838;
+}
+
+.container9 {
+	position: relative;
+	width:1780px;
+	height:550px;
+	background-color:white;
+	border-radius:25px;
+	padding:20px 20px 20px 20px;
+	margin: 20px 20px 20px 20px;
+	box-shadow: 10px 10px #383838;
+}
+
+#galleryimage2 {
+	display:block;
+	width:900px;
+	height:900px;
+	margin:0;
+	padding:0;
+	position:absolute;
+}
+
+#galleryimage3 {
+	display:block;
+	width:900px;
+	height:900px;
+	margin:0;
+	padding:0;
+	position:absolute;
+}
+
+#galleryimage4 {
+	margin-top: 500px;
+	display:block;
+	width:700px;
+	height:700px;
+	position:absolute;
+	margin-top: 420px;
+}
+
+
+#gallerytext1 {
+	top:20px;
+	left:940px;
+	display:block;
+	width:850px;
+	height:900px;
+	font-family: "Arial";
+	font-size: 25px;
+	text-align:center;
+	margin:0;
+	padding-top: 400px;
+	position:absolute;
+}
+
+#gallerytext2 {
+	top:20px;
+	left:20px;
+	display:block;
+	width:850px;
+	height:500px;
+	font-family: "Arial";
+	font-size: 25px;
+	text-align:center;
+	margin:0;
+	padding-top: 400px;
+	position:absolute;
+}
+
+#gallerytext3 {
+	top:20px;
+	left:950px;
+	display:block;
+	width:850px;
+	height:900px;
+	font-family: "Arial";
+	font-size: 25px;
+	text-align:center;
+	margin:0;
+	padding:0;
+	position:absolute;
+}

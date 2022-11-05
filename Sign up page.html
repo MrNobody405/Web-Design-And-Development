@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APU Basketball Team</title>
+<link href="css_stuff.css" rel="stylesheet"></link>                  <!--style sheet from css_stuff.css-->
+
+
+<style>
+
+input[type=text], input[type=password] {
+  width: 80%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.container {
+  width:1860px
+  padding:30px 30px 30px 30px;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+</style>
+<script>  
+	function signup(input) {
+		var x = document.getElementById("psw").value;
+		var y = document.getElementById("psw-repeat").value;
+		var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+		
+		if (x != y) {
+			alert("Password not the same");
+			return false;
+		} else if (input.value.match(validRegex)){
+			alert("Thank you for signing up! You will be contacted by our team soon!");
+			return true;
+		} else {
+			alert("Invalid email address!");
+			return false;
+		}
+	}
+</script> 
+
+</head>
+<body>
+<div id="wrapper">
+	<div id = "menu">   
+		<div id = "logo"> <img alt="APU basketball team logo" src="logo.png" class = "image"></img></div>
+		<div id = "navigation"><a href="APU%20Basketball%20Team%20Homepage.html">HOME</a></div>
+		<div id = "navigation"><a href="Gallery.html">GALLERY</a></div>
+		<div id = "navigation"><a href="Schedule.html">SCHEDULE</a></div>
+		<div id = "navigation"><a href="News.html">NEWS</a></div>
+		<div id = "navigation"><a href="Blog.html">BLOG</a></div>
+		<div id = "navigation"><a href="Team%20page.html">TEAM</a></div>
+		<div id = "navigation"><a href="Contact%20us%20page.html">CONTACT US</a></div>
+		<div id = "navigation"><a href="About%20us%20page.html">ABOUT US</a></div>
+	</div>
+	
+	<form action="/action_page.php" style="border:1px solid #ccc" onsubmit="return false" name="forms">
+
+    <h1>Registration</h1>
+    <p>Registration Form.</p>
+    <hr></hr>
+    
+    <label for="Name"><b>Name</b></label><br />
+
+    <input id="myInput" type="text" placeholder="Jason Wong" name="name" required></input><br />
+
+    <label for="email"><b>Email</b></label><br />
+
+    <input id="myInput" type="text" placeholder="Jasonwong@gmail.com" name="email" required></input><br />
+
+    <label for="psw"><b>Password</b></label><br />
+    <input id="psw" type="password" placeholder="0123456789" name="psw" required></input><br />
+
+    <label for="psw-repeat"><b>Repeat Password</b></label><br />
+    <input id="psw-repeat" type="password" placeholder="0123456789" name="psw-repeat" required></input><br />
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me</input>
+    </label>
+    
+    <div class="clearfix">
+      <button type="reset" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn" onClick="signup(document.forms.email)">Sign Up</button>
+    </div>
+
+	</form>	
+	
+	<div id = "footer">   
+		<div id = "copyright">ⓒ APU basketball team 2022.</div>
+		<div id = "moredetails">About us</div>
+		<div id = "moredetails">Contact us</div>
+	</div>
+</div>
+</body>
+
+</html>

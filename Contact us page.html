@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APU Basketball Team</title>
+<link href="css_stuff.css" rel="stylesheet"></link>                  <!--style sheet from css_stuff.css-->
+<style>
+
+.ContactUsContainer{
+  position: relative;
+  max-width: 800px;
+  height: 900px;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(72,98,85, 0.6);
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+p{
+  text-align: center;
+  letter-spacing: 1px;  
+  font-size: 45px;
+  font-family: "Arial";
+  margin-bottom: 20px;
+  color: #FFD700;
+}
+
+.input,
+.msg .area{
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transform: all 0.5s ease;
+}
+
+.login .input{
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+}
+
+.login .input:last-child{
+  margin-right: 0;
+}
+
+.msg .area{
+  height: 450px;
+}
+
+.ContactUsbtn{
+  width: 250px;
+  position: absolute;
+  right:35%;
+  bottom: 3%;
+  background: #486255;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+  color: #383838;
+  background-color: #FFD700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.input:focus,
+.msg .area:focus{
+  border: 2px solid #486255;
+}
+
+::-webkit-input-placeholder{
+  font-family: 'roboto';
+}
+
+textarea {
+  resize: none;
+}
+</style>
+<script type="text/javascript">  
+	function contact(input) {
+		var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+		
+		if (input.value.match(validRegex)) {
+			alert("Thank you for contacting us, we will be in touch with you soon!")
+			document.form1.text1.focus();
+			return true;
+		} else {
+			alert("Invalid email address!");
+			document.form1.text1.focus();
+			return false;
+		}
+	}
+</script> 
+
+</head>
+
+<body>
+<div id="wrapper">
+	<div id = "menu">   
+		<div id = "logo"> <img alt="APU basketball team logo" src="logo.png" class = "image"></img>   </div>
+		<div id = "navigation"><a href="APU%20Basketball%20Team%20Homepage.html">HOME</a></div>
+		<div id = "navigation"><a href="Gallery.html">GALLERY</a></div>
+		<div id = "navigation"><a href="Schedule.html">SCHEDULE</a></div>
+		<div id = "navigation"><a href="News.html">NEWS</a></div>
+		<div id = "navigation"><a href="Blog.html">BLOG</a></div>
+		<div id = "navigation"><a href="Team%20page.html">TEAM</a></div>
+		<div id = "navigation"><a href="Contact%20us%20page.html">CONTACT US</a></div>
+		<div id = "navigation"><a href="About%20us%20page.html">ABOUT US</a></div>
+	</div>
+	
+	<div class="ContactUsContainer">
+	    <p>CONTACT US</p>
+	     <form name="form1" onsubmit="return false">
+	    <div class="login">
+	      <input type="text" placeholder="Your Name" class="input"></input>
+	      <input type="text" placeholder="Your Email Address" class="input" name="email"></input>
+	    </div>
+	    
+	    <div class="subject">
+	      <input type="text" placeholder="Subject" class="input"></input>
+	    </div>
+	    
+	    <div class="msg">
+	      <textarea class="area" placeholder="Leave a Message"></textarea>
+	    </div>
+	    
+	    <div class="ContactUsbtn" type="submit" onClick="contact(document.form1.email)">Send Message</div>  
+	    </form>	
+  	</div>
+	
+	<div id = "footer">   
+		<div id = "copyright">ⓒ APU basketball team 2022.</div>
+		<div id = "moredetails"><a href="About%20us%20page.html">About us</a></div>
+		<div id = "moredetails"><a href="Contact%20us%20page.html">Contact us</a></div>
+	</div>
+</div>
+</body>
+
+</html>
